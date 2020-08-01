@@ -4,7 +4,8 @@
   "description": "Basic minewsweeper with HTML/JS/CSS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,17 @@
   "bugs": {
     "url": "https://github.com/darijavan/minesweeper/issues"
   },
-  "homepage": "https://github.com/darijavan/minesweeper#readme"
+  "homepage": "https://github.com/darijavan/minesweeper#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/parcel-env": "^0.0.0",
+    "@types/react": "^16.9.44",
+    "@types/react-dom": "^16.9.8",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.10",
+    "typescript": "^3.9.7"
+  }
 }
