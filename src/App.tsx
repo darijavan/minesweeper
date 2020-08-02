@@ -1,8 +1,8 @@
 import React from 'react';
-import Splash from './pages/Splash';
 import MainBoard from './pages/MainBoard';
-import { Router, Route } from './components/Route';
 import Menu from './pages/Menu';
+import Splash from './pages/Splash';
+import { Router, Route } from './components/Route';
 
 const App: React.FC = () => {
   return (
