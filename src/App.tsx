@@ -1,10 +1,16 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import Splash from './pages/Splash';
+import MainBoard from './pages/MainBoard';
+import { Router, Route } from './components/Route';
+import Menu from './pages/Menu';
 
 const App: React.FC = () => {
   return (
-    <>
-      <h1>Hello world!!!</h1>
-    </>
+    <Router>
+      <Route path="/" component={Splash} />
+      <Route path="/menu" component={Menu} />
+      <Route path="/board" component={MainBoard} />
+    </Router>
   );
 };
 
