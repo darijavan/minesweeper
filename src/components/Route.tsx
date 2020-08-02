@@ -59,11 +59,13 @@ export const Route: React.FC<RouteProps> = ({
 }) => {
   const location = useLocation();
 
-  if (location === path) {
-    if (Component) return <Component location={path} />;
-
-    return <>{children}</>;
-  }
+  if (location === path)
+    return (
+      <div id={location} role="routing">
+        {(Component && <Component location={location}>{children}</Component>) ||
+          children}
+      </div>
+    );
 
   return null;
 };
