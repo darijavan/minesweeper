@@ -1,2 +1,7 @@
 # Minesweeper
-Basic minewsweeper with HTML/JS/CSS
+
+Basic minewsweeper with React
+
+## Author
+
+👤 Hajanirina Ridjvan Randrianandraina
