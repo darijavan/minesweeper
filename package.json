@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/darijavan/minesweeper#readme",
   "dependencies": {
+    "clsx": "^1.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
