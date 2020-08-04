@@ -7,7 +7,6 @@ import React, {
 import ExplosionImage from '../assets/img/explosion.gif';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
-import './explosion.scss';
 
 interface ExplosionProps {
   id?: string;

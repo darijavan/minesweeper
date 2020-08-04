@@ -1,5 +1,4 @@
 import React from 'react';
-import './menu.scss';
 import { MineIcon } from '../components/icons';
 import { makeStyles } from '@material-ui/core/styles';
 

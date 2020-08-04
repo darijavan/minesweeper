@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import './splash.scss';
 import { MineIcon } from '../components/icons';
 import { Explosion, ExplosionAction } from '../components/explosion';
 import { useRouter } from '../components/Route';
