@@ -5,6 +5,7 @@ import React, {
   useImperativeHandle,
 } from 'react';
 import ExplosionImage from '../assets/img/explosion.gif';
+import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import './explosion.scss';
 
@@ -17,9 +18,17 @@ export interface ExplosionAction {
   play: () => void;
 }
 
+const useStyles = makeStyles(() => ({
+  root: ({ explode }: { explode: boolean }) => ({
+    display: explode ? 'block' : 'none',
+  }),
+}));
+
 export const Explosion = React.forwardRef<ExplosionAction, ExplosionProps>(
   ({ id, className }, ref) => {
     const [explode, setExplode] = useState(false);
+
+    const classes = useStyles({ explode });
 
     const play = useCallback(() => {
       setExplode(true);
@@ -34,7 +43,7 @@ export const Explosion = React.forwardRef<ExplosionAction, ExplosionProps>(
       <img
         id={id}
         src={ExplosionImage}
-        className={clsx('explosion', className, { explode })}
+        className={clsx(className, classes.root)}
       />
     );
   },
