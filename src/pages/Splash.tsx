@@ -20,6 +20,9 @@ const useStyles = makeStyles(() => ({
     textAlign: 'center',
     fontSize: 80,
   },
+  explosion: {
+    position: 'absolute',
+  },
 }));
 
 const Splash: React.FC = () => {
@@ -39,7 +42,7 @@ const Splash: React.FC = () => {
       <MineIcon size={150} color="#333333" />
       <h1 className={classes.title}>Minesweeper</h1>
       <h1>By Darija</h1>
-      <Explosion id="splashExplosion" ref={explosionRef} />
+      <Explosion className={classes.explosion} ref={explosionRef} />
     </div>
   );
 };
